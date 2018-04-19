@@ -13,10 +13,10 @@ led_4 = 4    # green led
 
 def led_blink(led_x):
     pinMode(led_x, "OUTPUT")
-    led_on = digitalWrite(led_x, 1)
+    digitalWrite(led_x, 1)
 
 def led_close(led_x):
-    led_off = digitalWrite(led_x, 0)
+    digitalWrite(led_x, 0)
 
 def get_status_code():
     try:
